@@ -1,0 +1,229 @@
+@font-face {
+	font-family: Titulo;
+	src: url(./fontes/ANODETONOONE.TTF)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+h1 {
+	font-family: Titulo;
+	font-size: 30px;
+	color: #603A03;
+	margin: 1.5rem 1.5rem;
+}
+
+body {
+	background-image: url(./img/fundo.jpg);
+  background-size: contain;
+}
+
+#container{
+	width:950px;
+	height:auto;
+	position: relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.descricao {
+	margin: 1rem 1rem;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: justify;
+}
+
+.button {
+  border-radius: 0.3rem;
+  background-color: rgba(100, 39, 35, 0.479);
+  border:none;
+  color: white;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 10px 15px;
+	margin: 1rem 1rem;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.button:hover{
+  background-color:rgb(20, 68, 48);
+  color: white
+}
+
+#fundoGame {
+	width: 950px;
+	height: 630px;
+	background-image: url(./img/fundo_game.jpg);
+	border-color: #FFF;
+	border-style: solid
+}
+
+#jogador {
+	width: 256px;
+	height: 66px;
+	position: absolute;
+	left: 8px;
+	top: 179px;
+	background-image: url(./img/apache.png)
+}
+
+#inimigo1 {
+	width: 256px;
+	height: 66px;
+	position: absolute;
+	left: 689px;
+	top: 253px;
+	background-image:url(./img/inimigo1.png)
+}
+
+#inimigo2 {
+	width: 165px;
+	height: 70px;
+	position: absolute;
+	left: 775px;
+	top: 447px;
+	background-image: url(./img/inimigo2.png)
+}
+
+#aliado {
+	width: 44px;
+	height: 51px;
+	position: absolute;
+	left: 10px;
+	top: 464px;
+	background-image:url(./img/aliado.png)
+}
+
+#inicio {
+	width: 350px;
+	height: 250px;
+	background-color: #FFF;
+ 	margin-left: auto;
+  margin-right:auto;
+ 	margin-top: 100px;
+	text-align: center;
+	padding: 10px
+}
+
+.rotacao {
+	background-image: url(./img/apache.png);
+	animation: play .5s steps(2) infinite
+}
+
+@keyframes play {
+	from { background-position: 0px }
+	to { background-position: -512px }
+}
+
+.rotacaoInimigo {
+  background-image: url(./img/inimigo1.png);
+  animation: play .5s steps(2) infinite
+}
+
+.movimento {
+	background-image: url(./img/aliado.png);
+	animation: play2 .9s steps(12) infinite
+}
+
+@keyframes play2 {
+	from { background-position: 0px; }
+	to { background-position: -528px }
+}
+
+#disparo {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	background-image: url(./img/disparo.png)
+}
+
+#explosao1 {
+	width: 15px;
+	height: 87px;
+	position: absolute
+}
+
+#explosao2 {
+	width: 15px;
+	height: 87px;
+	position: absolute
+	
+}
+
+#explosao3 {
+	width: 44px;
+	height: 51px;
+	position: absolute
+}
+
+.aliadoMorte {
+	width: 44px;
+	height: 51px;
+	background-image: url(./img/aliado_morte.png);
+	animation: play3 .5s steps(7) infinite
+}
+
+@keyframes play3 {
+	from { background-position: 0px }
+	to { background-position: -308px }
+}
+
+@-webkit-keyframes play3 {
+   from { background-position:    0px }
+     to { background-position: -308px }
+}
+
+@-moz-keyframes play3 {
+   from { background-position:    0px }
+     to { background-position: -308px }
+}
+
+@-ms-keyframes play3 {
+   from { background-position:    0px }
+     to { background-position: -308px }
+}
+
+@-o-keyframes play3 {
+   from { background-position:    0px }
+     to { background-position: -308px }
+}
+
+#placar {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 5px;
+	top: 590px
+}
+
+h2 {
+	font-family: Titulo;
+	font-size: 20px;
+	color: #FFF
+}
+
+#energia {
+	width: 140px;
+	height: 38px;
+	position: absolute;
+	left: 750px;
+	top: 7px
+}
+
+#fim {
+	width: 350px;
+	height: 200px;
+	background-color: #FFF;
+	margin: 12.5rem auto;
+	padding: auto;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 10px
+}
